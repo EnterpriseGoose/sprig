@@ -99,5 +99,5 @@ typedef struct {
   /* This is honestly probably heap abuse and most uses of it should
    * probably use stack memory instead. It's used to pass strings
    * across the C <-> JS barrier. */
-  char temp_str_mem[(1 << 12)];
+  char temp_str_mem[(1 << 16)];
 } State;
